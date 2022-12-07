@@ -1,0 +1,127 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media screen and (min-width: 375px){
+    body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.top{
+    background-image: url("/images/bg-top.svg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top right;
+    position: absolute;
+    width: 100%;
+}
+
+.bottom{
+    background-image: url("/images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 353px;
+    position: absolute;
+    background-position: bottom;
+}
+
+.page{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    padding-top: 50px;
+    color: hsl(233, 13%, 49%);
+    cursor: text;
+}
+
+
+.select{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.select p{
+    color: hsl(234, 14%, 74%);
+    letter-spacing: .2px;
+}
+
+.select p:first-child{
+    margin-right: 20px;
+}
+.select p:last-child{
+    margin-left: 20px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+  }
+  
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
