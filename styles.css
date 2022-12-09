@@ -139,22 +139,55 @@ h1{
     background-color: white;
     width: 350px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
 }
 
 .box2{
-    height: 450px;
     background-color: #969bed;
     width: 350px;
+    color: white;
+    border-radius: 10px;
 }
+
+.box2 h2{
+    margin-top: 45px;
+}
+
+.box2 .learnmore{
+    margin-bottom: 45px;
+    background: white;
+}
+.box2 .learnmore h3{
+    color: #969bed;
+}
+
+
+.box2 .learnmore:hover{
+    margin-bottom: 45px;
+    background: #969bed;
+}
+.box2 .learnmore h3:hover{
+    color: white;
+}
+.box2 h1{
+    color: white !important;
+}
+
+
 
 .dollar{
-    font-size: 40px;
+    font-size: 40px !important;
+    color: hsl(232, 13%, 33%);
+    padding-top: 23px !important;
+    padding-right: 7px;
+    font-weight: 900;
 }
 
-.box h1{
+.box-flex h1{
     font-size: 70px;
     color: hsl(232, 13%, 33%);
     padding-top: 6.325px;
+    font-weight: 900;
 }
 
 .separator{
@@ -165,6 +198,10 @@ h1{
     margin-right: auto;
 }
 
+.margin-separator{
+    margin-bottom: 20px;
+}
+
 .learnmore{
     background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
     border-radius: 7px;
@@ -173,12 +210,14 @@ h1{
     margin-right: auto;
     cursor: pointer;
     max-height: 42px;
+    margin-bottom: 18.675px;
 }
 
 .learnmore:hover{
     background: white;
     color: #969bed;
-    margin-bottom: 15px;
+    margin-bottom: 18.675px;
+    transition: all .3s ease;
 }
 .learnmore h3:hover{
     color: #969bed;
@@ -191,4 +230,9 @@ h1{
     color: white;
     font-size: 15px;
     letter-spacing: 1px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
 }
